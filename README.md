@@ -1,4 +1,5 @@
 # "Hang In There" Paired Project (2108)
+[Our project can be found here!](https://delilahrois.github.io/hang-in-there/)
 
 ## Table of Contents
   - [Abstract](#abstract)
@@ -7,7 +8,7 @@
   - [Install + Setup](#set-up)
   - [Contributors](#contributors)
 	- [Wins](#wins)
-	- [Challenges + Improvements](#challenges-+-Improvements)
+	- [Challenges + Improvements](#challenges-+-improvements)
   - [Project Specs](#project-specs)
 
 ## Abstract
@@ -16,6 +17,7 @@
 - User created custom projects by filling out pre- assigned fields
 - Add custom data to asset arrays through creating a custom poster
 - Save posters and view them in miniature form
+- User is able to delete saved posters
 
 ## Technologies
   - ATOM
@@ -25,10 +27,10 @@
   - Chrome
 
 ## Demonstration
-Access a demontstration here: [https://giphy.com/gifs/l5bjHDOqKVSjHVSaCm]
+Access a demonstration [here.](https://giphy.com/gifs/l5bjHDOqKVSjHVSaCm)
 
 ## Project Specs
-  - The project spec & rubric can be found here: (https://frontend.turing.edu/projects/module-1/hang-in-there.html)
+  - The project spec & rubric can be found [here.](https://frontend.turing.edu/projects/module-1/hang-in-there.html)
 
 
 ## Contributors
