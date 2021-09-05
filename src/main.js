@@ -122,7 +122,8 @@ var currentPoster;
 backToMainBtn.addEventListener('click', returnToMain);
 makePosterBtn.addEventListener('click', makePosterForm);
 nevermindBtn.addEventListener('click', returnToMain);
-saveThisPosterBtn.addEventListener('click', saveCreatedPoster)
+savedPostersGrid.addEventListener('dblclick', deleteSavedPosters);
+saveThisPosterBtn.addEventListener('click', saveCreatedPoster);
 showMyPosterBtn.addEventListener('click', showMyPoster);
 showRandomPostersBtn.addEventListener('click', createRandomPoster);
 showSavedBtn.addEventListener('click', showSavedPosters);
@@ -134,6 +135,16 @@ function createRandomPoster() {
   posterQuote.innerText = quotes[getRandomIndex(quotes)];
   posterImg.src = images[getRandomIndex(images)];
   currentPoster = new Poster(posterImg.src, posterTitle.innerText, posterQuote.innerText);
+};
+
+function deleteSavedPosters() {
+  var posterId = parseInt(event.target.parentNode.id);
+  for (var i = 0; i < savedPosters.length; i++) {
+    if (savedPosters[i].id === posterId) {
+      savedPosters.splice(i,1);
+    }
+  }
+  showSavedPosters();
 };
 
 function getRandomIndex(array) {
@@ -176,7 +187,7 @@ function showSavedPosters() {
   savedPostersGrid.innerHTML = "";
   for (var i = 0; i < savedPosters.length; i++) {
     savedPostersGrid.innerHTML += `
-      <article class="mini-poster">
+      <article class="mini-poster" id="${savedPosters[i].id}">
       <img src= ${savedPosters[i].imageURL} alt="nothin' to see here">
       <h2>${savedPosters[i].title}</h2>
       <h4>${savedPosters[i].quote}</h4>
